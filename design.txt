@@ -1,0 +1,29 @@
+components:
+	game area
+		containing all the components.
+		need to keep array of all living components in order to refresh their place
+	airplane
+		on the game area, const on the top.
+		keep moving from right to left - independatly
+		need to "drop" parachuters at random time- 
+			at random time (independatly) create new parachute.
+			call parachuters.go()
+			
+	parachuters(dropping point, sea level,)
+		on create start falling from the initial dropping point.
+		need to have go() function for starting the falling.
+		need to have destroy function. ondestroy will make the parachuter dissapear.
+			need to handle different cases between boat and sea level
+	boat(sea level,)
+		on the game area
+		on the sea level height
+		can be moved by arrows
+		???? how to know if got parachuter
+	sea(sea level,)
+		has a height that connected to the place of the boat and to dropping parachuters. it const when we decide it.
+	score
+		start from 0
+		reperesented as 4 digit number?
+	lives
+		start from 3
+		when 0, game over.
